@@ -1,0 +1,256 @@
+﻿*
+{
+    list-style-type: none;
+    text-decoration: none;
+    margin:0 auto;
+    padding:0;
+    color:black;
+}
+header
+{
+    width:100%;
+    height:125px;
+    border:5px solid teal;
+    background-color:teal;
+   
+}
+header img
+{
+    height:100%;
+    width:17%;
+    float:left;
+ }
+h1
+{
+    color:white;
+    font-size:271%;
+    font-weight:bolder;
+    margin:2% 10% 2% 40%; 
+    font-style:oblique;
+    font-family:Aharoni,Verdana;
+}
+header ul
+{
+    margin:2.7% 20% 0;
+}
+    header ul a
+    {
+        margin-left:20%;
+        
+    }
+    header ul li
+    {
+        float: left;
+        margin: 0 1%;
+        width: 13%;
+        height: 20px;
+        background-color: #59C3C3;
+        border-radius: 20% 20% 0 0;
+    }
+    header ul li:hover
+    {
+        background-color:white;
+    }
+     header ul li a:hover
+    {
+        color:teal;
+    }
+      
+   header div
+{
+   height: 30%;
+    width: 17%;
+    border: 3px solid #000;
+    border-radius:10%;
+    top: 12%;
+    position: absolute;
+    right: 0;
+    background-color:#59C3C3;
+    display:none;
+   
+      
+}
+    header div img
+    {
+        width:37%;
+        height:30%;
+        margin-left:33%;
+        display:block;
+    }
+    header div [type=text], header div [type=password]
+    {
+        margin:3% 0 0 21%;
+        width:60%;
+        height:12%;
+    }
+     header div [type=button]
+    {
+        margin:3% 0 0 31%;
+        width:40%;
+        height:15%;
+    }
+    header div a
+    {
+        margin: 3% 0 0 22%;
+        color:red;
+    }
+body .details
+   {
+    border-left: 3px solid silver;
+  width: 19%;
+float:right;
+height: 50%;
+   }
+.details center
+{
+    margin-top:-20%;
+}
+#profile 
+{
+    display:none;
+    margin-top: 20%;
+    background-color:#B3B6B6;
+
+}
+.adminprofile
+{ 
+    background-color:#B3B6B6;
+
+    margin-top:20%;
+}
+
+footer
+{
+     width:100%;
+    height:100px;
+    background-color:#c3d8d8;
+    border:5px solid black;
+    display:inline-block;
+}
+
+footer ul{
+
+margin-top:20px;
+display:inline-block;
+
+}
+footer li{
+	border-right: 2px solid;
+	float:left;
+	padding: 5px;
+}
+
+#imgProfile
+{
+   height: 30%;
+width: 44%;
+display:block;
+}
+ #lblName, #lblEmpid, #lblPosition
+{
+    font-size:120%;
+    font-weight:bolder;
+}
+.details span,.details input
+{
+     display:block;
+     width:60%;
+     height:4%;
+}
+#usersetting span:hover
+{
+    cursor:pointer;
+}
+.changepassword,.addnewadmin,.changepswd
+{
+    display:none;
+    margin-bottom:10%;
+    border:2px solid black;
+      background-color: #59C3C3;
+}
+#adminsetting,#usersetting
+{
+    
+    margin-top: 10%;
+}
+.route
+{ 
+    margin-top:20%;
+    
+   
+}
+.route h3
+{
+    margin-left:-1%;
+    padding-top:1.6%;
+    background-color:#A36429;
+    border-left: 3px solid silver;
+}
+#ContentPlaceHolder1_txtRemember
+{
+  margin: 7% 0px 0px 34%;
+display: block;
+width: 50%;
+}
+#ContentPlaceHolder1_RegularExpressionValidator1
+
+{
+    margin-left: 34%;
+
+}
+#ContentPlaceHolder1_btnRemember
+{
+     margin: 1% 0px 0px 25%;
+width: 16%;
+}
+.frame
+{
+   width: 61%;     
+   float:left; 
+}
+.GridStyle
+{
+   border: 2px solid teal;
+    background-color: White;
+    font-family: arial;
+    font-size: 12px;
+    border-collapse: collapse;
+    margin-bottom: 0px;
+}
+.GridStyle tr
+{
+    border: 1px solid rgb(217, 231, 255);
+    color: Black;
+    height: 25px;
+}
+.GridStyle th
+{
+    background-color: #6DCECE;
+    border: none;
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 4px;
+    color:Black;
+}
+
+.GridStyle tr th a,.GridStyle tr th a:visited
+{
+        color:Black;
+}
+.GridStyle tr th, .GridStyle tr td table tr td
+{
+    border: none;
+}
+
+.GridStyle td
+{
+    border-bottom: 1px solid rgb(217, 231, 255);
+    padding: 2px;
+}
+#ContentPlaceHolder1_GridView1
+{
+    margin-top:6%;
+    width:100%;
+    
+}

@@ -1,0 +1,86 @@
+﻿.layout
+{
+    width: 80%;
+   height:100%;
+   float:left;
+   display:inline-block;
+
+}
+   
+    .layout div p
+    {
+       background-color: #5F5F5F;
+float: left;
+padding: 0.2% 0;
+font-weight:bolder;
+     }
+    .layout marquee
+    {
+        float:left;
+        width:91%;
+    }
+    .layout div:first-child
+    {
+        background-color: #A9A9A9;
+        height: 27px;
+        width:101%;  
+    }
+    #slider
+    {
+       width: 50%;
+       float:left;
+       margin:9% 0 0 0%;
+   }
+   @keyframes slidy 
+   {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+div#slider { overflow: hidden; }
+div#slider figure img 
+{
+     width: 20%;
+     height:60%;
+    float:left;
+   }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  height:168%;
+  animation:15s slidy infinite; 
+}
+.layout div:nth-child(3)
+{
+    width: 30%;
+       height: 50%;
+       border: 1px solid black;
+       float:right;
+       background-color:#B3B6B6;
+      margin: 9% 5% 0% 0%;
+}
+.layout div:nth-child(3) center
+{
+    margin:5%;
+}
+    .layout div:nth-child(3) img
+    {
+        height:40%;
+        width:40%;
+        margin-top:1%;
+    }
+    .layout div:nth-child(3) input
+    {
+        width:80%;
+        height:20%;
+        margin:2%;
+        
+    }
+   

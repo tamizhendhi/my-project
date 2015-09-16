@@ -1,0 +1,68 @@
+﻿
+.layout
+{
+  width: 80.7%;
+height: 100%;
+float: left;
+margin-bottom: 5%;
+border-right: 1px solid silver;
+}
+    .layout div
+    {
+        width:50%;
+        height:100px;
+     border:2px solid black;
+       }
+        .layout div ul:first-child
+        {
+            display:inline-block;
+            margin-top:5%;
+ background-color:silver;
+        }
+       .layout div ul:first-child > li 
+       {
+    float: left;
+       }
+ul li
+{
+    font-weight:bold;
+    font-size:large;
+}
+
+ul ul
+{
+    margin:0 10%;
+    display:none;
+   background-color:silver;
+}
+.layout h2
+{
+   background-color:#BECECE;
+   padding:2% 0;
+   text-align: center;
+   width: 100%;
+}
+    .layout table
+    {
+        width:70%;
+        margin-left:30%;
+    }
+table [type=text], select,textarea,[type=password],[type=time]
+{
+    width:80%;
+    margin-top:8%;
+}
+table td:nth-child(3) span
+{
+    color:red;
+    width:75%;
+}
+td:first-child span
+{
+    font-weight:bold;
+}
+[type=submit]
+{
+   margin: 5% 5% 1% 4%;
+   width:10%;
+}

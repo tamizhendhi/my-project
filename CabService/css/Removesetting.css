@@ -1,0 +1,72 @@
+﻿body {
+    margin:0;
+    padding:0;
+}
+.layout h2
+{
+    background-color: #BECECE;
+    text-align: center;
+    width: 100%;
+}
+.layout h3
+{
+    background-color: #BECECE;
+    text-align: center;
+    width: 61%;
+    margin: 1% 0 0 10%;
+    padding: 1% 0 0 0;
+    float: left;
+    height:40px;
+}
+.bdiv
+{
+    width:61%;
+    margin:0% 0 0 10%;
+    border:1px solid black;
+    float:left;
+}
+.layout ul li
+{
+    width:15%;
+    float:left;
+    margin: 1% 0 0 3%;
+   
+}
+.rcab
+{
+   width: 61%;
+    margin: 0% 0 0 10%;
+    border: 1px solid black;
+    float: left;
+   
+}
+.rshift
+{
+   width: 61%;
+    margin: 0% 0 0 10%;
+    border: 1px solid black;
+    float: left;
+   
+}
+.rroute
+{
+   width: 61%;
+    margin: 0% 0 0 10%;
+    border: 1px solid black;
+    float: left;
+   
+}
+td:first-child span {
+    font-weight: bold;
+}
+table [type=text], select, textarea, [type=password], [type=time] {
+    width: 80%;
+    margin-top: 5%;
+}
+[type=submit] {
+    margin: 5% 5% 1% 4%;
+    width: 15%;
+}
+.rshift td:first-child span {
+    font-weight: bold;
+}

@@ -1,0 +1,32 @@
+﻿body {
+    margin:0;
+    padding:0;
+}
+.layout h3, h2
+{
+    background-color: #BECECE;
+    text-align: center;
+    width: 100%;
+}
+
+
+.layout div {
+    width: 61%;
+    
+    border: 2px solid black;
+}
+.layout table {
+    width: 85%;
+    margin:3% 0 0 15%;
+}
+td:first-child span {
+    font-weight: bold;
+}
+table [type=text], select, textarea, [type=password], [type=time] {
+    width: 80%;
+    margin-top: 5%;
+}
+[type=submit] {
+    margin: 5% 5% 1% 4%;
+    width: 15%;
+}

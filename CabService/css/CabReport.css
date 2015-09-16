@@ -1,0 +1,14 @@
+﻿.layout
+{
+  width: 80%;
+height: 100%;
+float: left;
+margin-bottom: 5%;
+border: 3px solid black;
+}
+
+center > input 
+{
+    width:30%;
+    margin-top:10%;
+}
