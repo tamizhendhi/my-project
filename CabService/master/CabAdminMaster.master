@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CabAdminMaster.master.cs" Inherits="CabAdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <title>Admin-Ameex Cab Service</title>
+    <link rel="stylesheet" type="text/css" href="../css/CabMaster.css" />
+    <script src="../js/jquery-1.11.0.js"></script>
+    <script src="../js/CabMaster.js"></script>
+     <script type="text/javascript" >
+         function DisableBackButton() {
+             window.history.forward()
+         }
+         DisableBackButton();
+         window.onload = DisableBackButton;
+         window.onpageshow = function (evt) { if (evt.persisted) DisableBackButton() }
+         window.onunload = function () { void (0) }
+ </script>
+   
+    <asp:ContentPlaceHolder id="head" runat="server">              
+    </asp:ContentPlaceHolder>
+</head>
+<header>
+    <img src="../images/logo.jpg" alt="logo"/>
+    <h1>AMEEX CAB SERVICE</h1>
+    <ul>
+        <li> <asp:hyperlink id="PMHome" NavigateUrl="~/adminaspx/CabAdmin.aspx" runat="server">PMHome</asp:hyperlink> </li>
+         <li><asp:hyperlink id="HRHome" NavigateUrl="~/adminaspx/CabHRvoucher.aspx" runat="server">HRHome</asp:hyperlink></li>
+   <li><asp:hyperlink id="AdminHome" NavigateUrl="~/adminaspx/CabReport.aspx" runat="server">ADHome</asp:hyperlink></li>
+  
+         <li><asp:hyperlink id="Update" NavigateUrl="~/useraspx/CabProfileUpdate.aspx" runat="server">Profilation</asp:hyperlink></li>
+        <li><asp:hyperlink id="Voucher" NavigateUrl="~/adminaspx/CabVoucher.aspx" runat="server">Voucher Request</asp:hyperlink></li>
+  
+    <li><asp:hyperlink id="Voucherreport" NavigateUrl="~/adminaspx/CabVoucherReport.aspx" runat="server">Voucher Report</asp:hyperlink></li>
+           <li><asp:hyperlink id="Cabreport" NavigateUrl="~/adminaspx/CabReport.aspx" runat="server">Booking Report</asp:hyperlink></li>
+        
+    <li> <asp:hyperlink id="AddService" NavigateUrl="~/adminaspx/CabSettings.aspx" runat="server">Add Service</asp:hyperlink> </li>
+         <li><asp:hyperlink id="RemoveService" NavigateUrl="~/adminaspx/Removesetting.aspx" runat="server">Remove Service</asp:hyperlink></li>
+    
+    </ul>
+    
+</header>
+<body>
+    <form id="form1" runat="server">
+       <div class="details">      
+           
+              <center> 
+                  <div class="adminprofile">
+                     
+               <asp:Image ID="imgProfile" ImageUrl="~/images/myaccount.png" runat="server" />
+              <asp:Label ID="lblName" runat="server" Text="Name"></asp:Label>
+               <asp:Label ID="lblEmpid" runat="server" Text="EmployeeId"></asp:Label>
+              <asp:Label ID="lblPosition" runat="server" Text="Position"></asp:Label>
+             
+              <div id="adminsetting" >  
+               <asp:Label ID="lblAddadmin" runat="server" >Add New Admin&#9660;</asp:Label>
+                  <div id="admin1"class="addnewadmin">
+                      <asp:TextBox ID="txtAdminid" runat="server" Text="EmpId"></asp:TextBox>
+                      <asp:TextBox ID="txtAdminmail" runat="server" Text="Email-Id"></asp:TextBox>
+                      <asp:DropDownList ID="DrpActype" runat="server">
+                          <asp:ListItem>Project Manager</asp:ListItem>
+                          <asp:ListItem>Human Resource</asp:ListItem>
+                      </asp:DropDownList>
+                      <asp:Button ID="btnAddadmin" runat="server" Text="Add New Admin" OnClick="btnAddadmin_Click"></asp:Button>
+                             
+               </div>
+              <asp:Label ID="lblChpswd" runat="server" >Change Password&#9660;</asp:Label>
+                <div class="changepassword">
+                  <asp:TextBox ID="txtOldpassword" runat="server" text="Oldpassword"></asp:TextBox>
+                  <asp:TextBox ID="txtNewpassword" runat="server" text="Newpassword"></asp:TextBox>
+                  <asp:TextBox ID="txtConfirmpassword" runat="server" text="Confirmpassword" ></asp:TextBox>
+               <asp:Button ID="btnChangepassword" runat="server" Text="Change Password" OnClick="btnChangepassword_Click"></asp:Button>
+                     </div>
+               </div>
+
+              <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" />
+               </div> 
+                  <div class="route">
+                      <h3>Available Routes</h3>
+                      <marquee direction="up" scrolldelay="200" onmouseover="this.stop()" onmouseout="this.start()" >
+                          <center>
+                         <%= route %>
+                          </center> 
+                        </marquee>
+                      <h3>Shift Timings</h3>
+                      <marquee direction="up" scrolldelay="200" onmouseover="this.stop()" onmouseout="this.start()">
+                          <center>
+                          <%= shift %>
+                          </center> 
+                       </marquee>
+                   </div>
+             </center>
+        </div>
+    
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">        
+        </asp:ContentPlaceHolder>
+    
+    </form>
+</body>
+     <footer>
+        <center>
+    <ul><li><a href="#">| Home |</a></li>
+		<li><a href="#">Profilation |</a></li>
+		<li><a href="#">Report |</a></li>
+     </ul>
+    <pre> &copy; corporate profile 2015 all right reaserved
+Design by:Ameex Technologies
+    </pre>
+    </center>
+    </footer>
+</html>

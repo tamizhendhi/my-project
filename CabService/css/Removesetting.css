@@ -1,0 +1,54 @@
+﻿body {
+    margin:0;
+    padding:0;
+}
+.layout h2
+{
+   background-color:#577A7A;
+   padding:2% 0;
+   text-align: center;
+   width: 100%;
+}
+
+.bdiv {
+  width: 47%;
+margin: 2% 0px 0px 17%;
+float: left;
+height: 39px;
+background-color:#848D8D;
+}
+.layout ul li:hover
+{
+    background-color:white;
+     border-radius: 20% 20% 0px 0px;
+     font-size:140%;
+}
+.layout ul li
+{
+   width: 28%;
+float: left;
+margin: 1% 0px 0px 3%;
+cursor:pointer;   
+}
+.rcab,.rshift,.rroute
+{
+  width: 47%;
+  background-color:rgb(174, 185, 186);
+margin: 0% 0px 0px 17%;
+float: left;
+display: none;
+   
+   
+}
+
+.layout td:first-child span {
+    font-weight: bold;
+}
+.layout table [type=text],.layout select,.layout textarea,.layout [type=password],.layout [type=time],.layout span {
+    width: 100%;
+    margin-top: 10%;
+}
+.layout [type=submit] {
+   margin: 6% 10% 3% 0%;
+    width: 15%;
+}

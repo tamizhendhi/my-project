@@ -1,0 +1,112 @@
+﻿.layout
+{
+   width: 80%;
+   height:100%;
+   float:left;
+   margin-bottom:5%;
+}
+    .layout div:nth-of-type(1)
+    {
+       width:20%;
+       height:812px;
+       float:left;
+       background-color: #577A7A;
+    }
+        .layout div:nth-of-type(1) [type=submit]
+        {
+           width: 80%;
+margin-left: -11%;
+        }
+    .layout div:nth-of-type(1) span
+    {
+      display: inline-block;
+font-size: 100%;
+text-align:center;
+margin: 5% 0% 0% 14%;
+cursor:pointer;
+
+    }
+ #ContentPlaceHolder1_txtcanceldate{
+   margin: 10% 12% 0% 9%;
+width: 80%;
+}
+
+
+    .layout div:nth-of-type(2) 
+    {
+       width: 80.5%;
+background-color: #B3B6B6;
+height: 100%;
+    margin-left: 20%;
+    }
+       
+       
+    .layout div:nth-of-type(3), .layout div:nth-of-type(4)
+    {
+        width:50%;
+        margin:5% 0 0 35%;
+        background-color:#AEB9BA;
+      
+    }
+    .layout div:nth-of-type(4)
+    {
+        display:none;
+    }
+div h2
+{
+    background-color:#848D8D;
+    margin-bottom:10%;
+}
+div h3:first-child
+{
+    background-color:#8D4134;
+    margin-bottom:10%;
+}
+.layout table
+{
+        margin-top: -8%;
+}
+.layout div select,[type=text],[type=date]
+{
+    width:100%;
+     
+}
+.layout [type=text], .layout select,.layout span,[type=file],[type=date]
+{
+    margin-top:11%;
+}
+.layout div span
+{
+   font-size: 113%;
+font-weight: bold;
+}
+.layout [type=submit]
+{
+   margin: 6% -8% 5% 19%;
+width: 25%;
+}
+td:nth-child(3) span
+{
+    font-size:80%;
+    color:red;
+}
+.layout div:nth-of-type(5)
+{
+    width:100.7%;
+}
+#ContentPlaceHolder1_GridUser
+{
+   margin-top: 0%;
+width: 101%;
+margin-left: 0%;
+}
+#ContentPlaceHolder1_GridVoucher
+{
+    margin-top: 1%;
+    width: 80%;
+}
+iframe
+ {  height: 300px;
+width: 124.6%;
+}
+

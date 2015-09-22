@@ -1,0 +1,30 @@
+﻿.layout
+{
+  width: 80%;
+height: 100%;
+float: left;
+margin: 3% 0%;
+}
+#GridVoucher
+{
+    float:left;
+    width:100%;
+    border:2px solid black;
+}
+
+center > input 
+{
+  width: 20%;
+    height: 30px;
+    margin-top: 3%;
+    background-color: #BB5959;
+}
+#ContentPlaceHolder1_btnRejectall 
+{
+   margin: 0% 0% 1% 10%;
+   width:15%;
+}
+#ContentPlaceHolder1_btnAcceptall
+{ width:15%;
+    margin: 4% 0% 2% 34%;
+}
